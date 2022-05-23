@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 //import { NativeAudio } from '@awesome-cordova-plugins/native-audio/ngx';
-//import { Media } from '@ionic-native/media/ngx';
-import { NativeAudio } from '@ionic-native/native-audio/ngx';
+import { Media } from '@ionic-native/media/ngx';
+//import { NativeAudio } from '@ionic-native/native-audio/ngx';
 
 @Component({
   selector: 'app-home',
@@ -283,14 +283,14 @@ export class HomePage {
 
   constructor(private nativeAudio: NativeAudio,
     private media: Media ) {
-    this.nativeAudio.preloadSimple('duck','assets/duck.wav');
+    //this.nativeAudio.preloadSimple('duck','assets/duck.wav');
 
   }
 
   
   
   onReady(){
-    this.nativeAudio.preloadSimple('duck','assets/duck.wav');
+    //this.nativeAudio.preloadSimple('duck','assets/duck.wav');
     //this.curr_playing_file = this.media.create("assets/bravomousoudaki.m4a");
     //this.curr_playing_file.play();
     setTimeout(() => {
@@ -305,7 +305,7 @@ export class HomePage {
   }
 
   playAudio(soundId,audioPath){
-    this.nativeAudio.preloadSimple(soundId, audioPath);
+    /*this.nativeAudio.preloadSimple(soundId, audioPath);
     //then(()=>{
       this.nativeAudio.setVolumeForComplexAsset('soundId', 0.6).then(
         //console.log('sets volume')
@@ -313,7 +313,7 @@ export class HomePage {
       setTimeout(() => {
         this.nativeAudio.play(soundId, () =>
         console.log(soundId+' is done playing'));
-    }, 500);
+    }, 500);*/
 
     //});
 }
