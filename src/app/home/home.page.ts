@@ -281,7 +281,7 @@ export class HomePage {
  ];
 
 
-  constructor(private nativeAudio: NativeAudio,
+  constructor(//private nativeAudio: NativeAudio,
     private media: Media ) {
     //this.nativeAudio.preloadSimple('duck','assets/duck.wav');
 
@@ -293,10 +293,10 @@ export class HomePage {
     //this.nativeAudio.preloadSimple('duck','assets/duck.wav');
     //this.curr_playing_file = this.media.create("assets/bravomousoudaki.m4a");
     //this.curr_playing_file.play();
-    setTimeout(() => {
-      this.playAudio('duck','assets/duck.wav');
+    //setTimeout(() => {
+      //this.playAudio('duck','assets/duck.wav');
 
-    }, 700);
+    //}, 700);
   }
 
   goButton(){
