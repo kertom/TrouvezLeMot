@@ -1,0 +1,7 @@
+{
+  "name": "TrouvezLeMot",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
